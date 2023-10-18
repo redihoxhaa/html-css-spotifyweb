@@ -152,6 +152,8 @@ body {
     gap: 16px;
     margin-top: 15px;
     overflow-y: auto;
+    height: calc(100vh - 460px);
+    min-height: 100px;
 }
 
 .main.container .navbar .top-menu .playlist-menu .playlist-list li span {
@@ -263,7 +265,7 @@ footer {
 
     .main.container .navbar a,
     .main.container .navbar span,
-    .main.container .navbar .add-playlist,
+    .main.container .navbar .top-menu .playlist-menu,
     .main.container .navbar .top-menu .big-logo,
     .main.container .navbar .bottom-menu hr {
         display: none;
