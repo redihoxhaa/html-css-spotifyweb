@@ -19,6 +19,12 @@ ul {
     list-style-type: none;
 }
 
+button {
+    background-color: unset;
+    border: unset;
+    cursor: pointer;
+}
+
 /* #endregion RESET */
 
 /* #region TYPOGRAPHY */
@@ -32,6 +38,7 @@ body {
     --dash-bg: #141922;
     --text-gray: #6f6f6f;
     --highlight: #adff2f;
+    --songbar: #c1c1c1;
 }
 
 /* #endregion TYPOGRAPHY */
@@ -57,6 +64,21 @@ body {
 .justify-center {
     justify-content: center;
 }
+
+.total-bar {
+    height: 4px;
+    border-radius: 10px;
+    background-color: var(--text-gray);
+}
+
+.actual-bar {
+    width: 20%;
+    height: 100%;
+    background-color: var(--songbar);
+    border-radius: 10px;
+}
+
+
 
 /* #endregion COMMON */
 
@@ -229,7 +251,7 @@ body {
 
 /* #region FOOTER */
 
-footer .commands-container {
+footer .controls-container {
     height: 90px;
     background-color: var(--foot-bg);
     position: fixed;
@@ -240,37 +262,78 @@ footer .commands-container {
 
 }
 
-footer .commands-container .left-commands,
-footer .commands-container .center-commands,
-footer .commands-container .rigt-commands {
-    width: calc(100% / 3)
-}
-
-footer .commands-container .left-commands .listening .actual-song-cover {
+footer .controls-container .left-controls .listening .actual-song-cover {
     width: 42px;
     margin-right: 12px;
 }
 
-footer .commands-container .left-commands .listening .actual-song-info .actual-song-title {
+footer .controls-container .left-controls .listening .actual-song-info .actual-song-title {
     color: white;
     font-weight: bold;
     font-size: .75rem;
 }
 
-footer .commands-container .left-commands .listening .actual-song-info .actual-song-artist {
+footer .controls-container .left-controls .listening .actual-song-info .actual-song-artist {
     color: var(--text-gray);
     font-weight: bold;
     font-size: .625rem;
 }
 
-footer .commands-container .left-commands .listening .song-interactions {
+footer .controls-container .left-controls .listening .song-interactions {
     gap: 14px;
     margin-left: 43px;
 }
 
-footer .commands-container .left-commands .listening .song-interactions a i {
+footer .controls-container .left-controls .listening .song-interactions a i {
     color: var(--text-gray)
 }
+
+footer .controls-container .center-controls {
+    flex-shrink: 0;
+}
+
+footer .controls-container .center-controls .top-controls {
+    margin-bottom: 15px;
+    gap: 22px;
+}
+
+footer .controls-container .center-controls .top-controls li button i {
+    color: white;
+    font-size: 1.125rem;
+}
+
+footer .controls-container .center-controls .top-controls li button .fa-circle-play {
+    font-size: 1.875rem;
+    padding: 0 8px;
+}
+
+footer .controls-container .center-controls .bottom-scrollbar .total-bar {
+    width: 428px;
+    margin: 0 26px;
+
+}
+
+footer .controls-container .center-controls .bottom-scrollbar .actual-time,
+footer .controls-container .center-controls .bottom-scrollbar .song-duration {
+    font-weight: bold;
+    color: white;
+    font-size: .625rem;
+}
+
+footer .controls-container .right-controls {
+    gap: 17px;
+
+}
+
+footer .controls-container .right-controls li button i {
+    color: white;
+}
+
+footer .controls-container .right-controls .total-bar {
+    width: 118px;
+    margin-left: 4px;
+}
+
 
 /* #endregion FOOTER */
 

@@ -45,8 +45,10 @@
         <div class="main container flex">
             <!-- Navbar -->
             <nav class="navbar flex column space-between">
+
                 <!-- Top menu -->
                 <div class="top-menu flex column">
+
                     <!-- Contenitore logo -->
                     <div class="logo-container">
                         <img src="img/logo.svg" alt="Spotify Logo" class="big-logo">
@@ -87,7 +89,7 @@
 
                         <!-- Aggiungi playlist -->
                         <div class="add-playlist">
-                            <i class="fa-solid fa-square-plus"></i>
+                            <a href="#"><i class="fa-solid fa-square-plus"></i></a>
                             <a href="#">Crea Playlist</a>
                         </div>
                         <!-- Aggiungi playlist -->
@@ -105,9 +107,9 @@
                         <!-- /Lista playlist dell'utente -->
                     </div>
                     <!-- /Playlist menu -->
+
                 </div>
                 <!-- /Top menu -->
-
 
                 <!-- Bottom menu -->
                 <div class="bottom-menu">
@@ -128,6 +130,7 @@
                     <!-- /Profilo e call to action app -->
                 </div>
                 <!-- /Bottom menu -->
+
             </nav>
             <!-- /Navbar -->
 
@@ -149,8 +152,8 @@
 
     <!-- Footer -->
     <footer>
-        <div class="commands-container flex space-between align-center">
-            <div class="left-commands flex">
+        <div class="controls-container flex space-between align-center">
+            <div class="left-controls flex">
                 <div class="listening flex">
                     <div class="actual-song-cover">
                         <img src="img/sinister.jpeg" alt="Sinister cover">
@@ -170,8 +173,33 @@
 
             </div>
 
-            <div class="center-commands">a</div>
-            <div class="right-commands">a</div>
+            <div class="center-controls">
+                <ul class="top-controls flex align-center justify-center">
+                    <li><button><i class="fa-solid fa-shuffle"></i></button></li>
+                    <li><button><i class="fa-solid fa-backward-step"></i></button></li>
+                    <li><button><i class="fa-regular fa-circle-play"></i></button></li>
+                    <li><button><i class="fa-solid fa-forward-step"></i></button></li>
+                    <li><button><i class="fa-solid fa-rotate-right"></i></button></li>
+                </ul>
+                <div class="bottom-scrollbar flex align-center justify-center">
+                    <span class="actual-time">0:25</span>
+                    <div class="total-bar">
+                        <div class="actual-bar"></div>
+                    </div>
+                    <span class="song-duration">4:35</span>
+                </div>
+            </div>
+
+            <ul class="right-controls flex align-center">
+                <li><button><i class="fa-solid fa-list-ul"></i></button></li>
+                <li><button><i class="fa-solid fa-desktop"></i></button></li>
+                <li><button><i class="fa-solid fa-volume-high"></i></button></li>
+                <li>
+                    <div class="total-bar">
+                        <div class="actual-bar"></div>
+                    </div>
+                </li>
+            </ul>
 
         </div>
     </footer>
