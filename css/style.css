@@ -83,6 +83,11 @@ body {
     width: 100%
 }
 
+.main.container .navbar .top-menu .logo-container .small-logo {
+    display: none;
+}
+
+
 /* #endregion logo-container*/
 
 /* #region nav-menu */
@@ -229,5 +234,64 @@ footer {
 /* #endregion FOOTER */
 
 /* #region MEDIA QUERIES */
+
+/* #region da 0 a 992px */
+
+@media screen and (max-width: 992px) {}
+
+/* #endregion da 0 a 992px */
+
+/* #region da 0px a 768px */
+
+@media screen and (max-width: 768px) {}
+
+/* #endregion da 0px a 768px */
+
+/* #region da 0px a 576px */
+
+@media screen and (max-width: 576px) {
+
+    .main.container .navbar {
+        width: 50px;
+        padding: 0;
+    }
+
+    .main.container .navbar .top-menu,
+    .main.container .navbar .bottom-menu .profile-menu {
+        align-items: center;
+    }
+
+    .main.container .navbar a,
+    .main.container .navbar span,
+    .main.container .navbar .add-playlist,
+    .main.container .navbar .top-menu .big-logo,
+    .main.container .navbar .bottom-menu hr {
+        display: none;
+    }
+
+    .main.container .navbar .top-menu .logo-container .small-logo {
+        display: block;
+    }
+
+    .main.container .navbar .top-menu .logo-container {
+        width: 28px;
+        margin-top: 5px;
+    }
+
+    .main.container .navbar .top-menu .nav-menu .element-list li img,
+    .main.container .navbar .bottom-menu .profile-menu .download-app img {
+        margin: 0;
+    }
+
+    .main.container .navbar .bottom-menu .profile-menu .user .pic-container {
+        margin: 22px 0 10px;
+    }
+
+    .main.container .navbar .top-menu .nav-menu .element-list {
+        margin-top: 15px;
+    }
+}
+
+/* #endregion da 0px a 576px */
 
 /* #endregion MEDIA QUERIES */
