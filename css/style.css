@@ -8,6 +8,7 @@
 
 img {
     display: block;
+    width: 100%;
 }
 
 a {
@@ -51,6 +52,10 @@ body {
 
 .space-between {
     justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
 }
 
 /* #endregion COMMON */
@@ -224,13 +229,47 @@ body {
 
 /* #region FOOTER */
 
-footer {
+footer .commands-container {
     height: 90px;
     background-color: var(--foot-bg);
     position: fixed;
     left: 0;
     right: 0;
     z-index: 9999;
+    padding: 0 11px;
+
+}
+
+footer .commands-container .left-commands,
+footer .commands-container .center-commands,
+footer .commands-container .rigt-commands {
+    width: calc(100% / 3)
+}
+
+footer .commands-container .left-commands .listening .actual-song-cover {
+    width: 42px;
+    margin-right: 12px;
+}
+
+footer .commands-container .left-commands .listening .actual-song-info .actual-song-title {
+    color: white;
+    font-weight: bold;
+    font-size: .75rem;
+}
+
+footer .commands-container .left-commands .listening .actual-song-info .actual-song-artist {
+    color: var(--text-gray);
+    font-weight: bold;
+    font-size: .625rem;
+}
+
+footer .commands-container .left-commands .listening .song-interactions {
+    gap: 14px;
+    margin-left: 43px;
+}
+
+footer .commands-container .left-commands .listening .song-interactions a i {
+    color: var(--text-gray)
 }
 
 /* #endregion FOOTER */
@@ -252,6 +291,8 @@ footer {
 /* #region da 0px a 576px */
 
 @media screen and (max-width: 576px) {
+
+    /* #region navbar responsive*/
 
     .main.container .navbar {
         width: 50px;
@@ -292,7 +333,14 @@ footer {
     .main.container .navbar .top-menu .nav-menu .element-list {
         margin-top: 15px;
     }
+
+    /* #endregion navbar responsive*/
+
+
+
 }
+
+
 
 /* #endregion da 0px a 576px */
 
