@@ -6,25 +6,225 @@
     box-sizing: border-box;
 }
 
+img {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
 /* #endregion RESET */
 
 /* #region TYPOGRAPHY */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --foot-bg: #282828;
+    --dash-bg: #141922;
+    --text-gray: #6f6f6f;
+    --highlight: #adff2f;
+}
 
 /* #endregion TYPOGRAPHY */
 
 /* #region COMMON */
 
+.flex {
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
 /* #endregion COMMON */
 
-/* #region HEADER */
-
-/* #endregion HEADER */
-
 /* #region MAIN */
+
+/* #region navbar */
+
+.main.container .navbar {
+    width: 230px;
+    background-color: black;
+    height: calc(100vh - 90px);
+    padding: 20px 20px 10px 20px;
+}
+
+.main.container .navbar span,
+.main.container .navbar a {
+    color: var(--text-gray);
+    font-weight: bold;
+    font-size: .75rem;
+}
+
+/* #region logo-container*/
+
+.main.container .navbar .top-menu .logo-container {
+    width: 132px;
+}
+
+.main.container .navbar .top-menu .logo-container img {
+    width: 100%
+}
+
+/* #endregion logo-container*/
+
+/* #region nav-menu */
+
+.main.container .navbar .top-menu .nav-menu .element-list {
+    margin-top: 29px;
+    gap: 9px;
+}
+
+.main.container .navbar .top-menu .nav-menu .element-list li .element-evidence {
+    color: white;
+}
+
+.main.container .navbar .top-menu .nav-menu .element-list li:first-of-type {
+    position: relative;
+}
+
+.main.container .navbar .top-menu .nav-menu .element-list li:first-of-type .highlighter {
+    width: 3px;
+    height: 35px;
+    background-color: var(--highlight);
+    position: absolute;
+    left: -20px;
+}
+
+.main.container .navbar .top-menu .nav-menu .element-list img {
+    width: 26px;
+    margin-right: 6px;
+    opacity: 0.7;
+}
+
+/* #endregion nav-menu */
+
+/* #region playlist-menu */
+
+.main.container .navbar .top-menu .playlist-menu {
+    margin-top: 22px;
+}
+
+.main.container .navbar .top-menu .playlist-menu .element-evidence {
+    color: white;
+    font-size: .8125rem;
+}
+
+.main.container .navbar .top-menu .playlist-menu .add-playlist {
+    margin-top: 8px;
+}
+
+.main.container .navbar .top-menu .playlist-menu .add-playlist a {
+    font-size: .875rem;
+}
+
+.main.container .navbar .top-menu .playlist-menu .add-playlist i {
+    color: white;
+    font-size: 2.625rem;
+    vertical-align: middle;
+    margin-right: 7px;
+    opacity: 0.7;
+}
+
+.main.container .navbar .top-menu .playlist-menu .playlist-list {
+    gap: 16px;
+    margin-top: 15px;
+    overflow-y: auto;
+}
+
+.main.container .navbar .top-menu .playlist-menu .playlist-list li span {
+    font-size: .8125rem;
+}
+
+/* #endregion playlist-menu */
+
+/* #region profile-menu */
+
+.main.container .navbar .bottom-menu .profile-menu .download-app {
+    margin-top: 9px;
+}
+
+.main.container .navbar .bottom-menu .profile-menu .download-app img {
+    opacity: 0.7;
+    width: 13px;
+    margin-right: 11px;
+
+}
+
+.main.container .navbar .bottom-menu .profile-menu hr {
+    border-color: var(--text-gray);
+    margin-top: 9px;
+    margin-bottom: 13px;
+}
+
+.main.container .navbar .bottom-menu .profile-menu .user .username {
+    font-size: .8125rem;
+    color: white;
+}
+
+.main.container .navbar .bottom-menu .profile-menu .user .pic-container {
+    margin-right: 10px;
+    background-color: var(--text-gray);
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    overflow: hidden;
+}
+
+.main.container .navbar .bottom-menu .profile-menu .user .pic-container img {
+    object-fit: cover;
+}
+
+/* #endregion profile-menu */
+
+/* #endregion navbar */
+
+/* #region dashboard */
+
+.main.container .dashboard {
+    background-color: var(--dash-bg);
+    flex-grow: 1;
+    overflow: auto;
+}
+
+.main.container .dashboard .upgrade-overlay {
+    height: 90px;
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+/* #endregion dashboard */
+
+
 
 /* #endregion MAIN */
 
 /* #region FOOTER */
+
+footer {
+    height: 90px;
+    background-color: var(--foot-bg);
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
 
 /* #endregion FOOTER */
 
