@@ -16,6 +16,10 @@ a {
     color: var(--text-gray);
 }
 
+a:hover {
+    color: white;
+}
+
 ul {
     list-style-type: none;
 }
@@ -85,6 +89,11 @@ h2 {
     background-color: var(--songbar);
     border-radius: 10px;
 }
+
+.total-bar:hover .actual-bar {
+    background-color: var(--highlight);
+}
+
 
 .highlighter {
     background-color: var(--highlight);
@@ -176,6 +185,15 @@ h2 {
     margin-top: 8px;
 }
 
+.main-container .navbar .playlist-menu .add-playlist:hover .fa-square-plus {
+    opacity: 1;
+}
+
+.main-container .navbar .playlist-menu .add-playlist:hover .create-playlist {
+    color: white;
+}
+
+
 .main-container .navbar .playlist-menu .add-playlist a {
     font-size: .875rem;
 }
@@ -215,7 +233,14 @@ h2 {
     opacity: 0.7;
     width: 13px;
     margin-right: 11px;
+}
 
+.main-container .navbar .profile-menu .download-app:hover .download-icon {
+    opacity: 1;
+}
+
+.main-container .navbar .profile-menu .download-app:hover a {
+    color: white;
 }
 
 .main-container .navbar .profile-menu hr {
@@ -242,6 +267,7 @@ h2 {
 .main-container .navbar .profile-menu .user .pic-container img {
     object-fit: cover;
 }
+
 
 /* #endregion profile-menu */
 
@@ -277,12 +303,18 @@ h2 {
     font-size: .75rem;
 }
 
+.main-container .dashboard .upgrade-overlay button:hover {
+    scale: 1.1;
+}
+
 /* #endregion upgrade-overlay */
 
 /* #region main-page */
 
 .main-container .dashboard .main-page {
     padding: 0 20px;
+    height: calc(100vh - 90px);
+    overflow-y: auto;
 }
 
 /* #region categories */
@@ -325,30 +357,45 @@ h2 {
     width: calc((100% - 75px) / 6);
 }
 
+
+
+
 .main-container .dashboard .main-page .section-container .carousel .element .cover-container {
     position: relative;
 }
 
-.main-container .dashboard .main-page .section-container .carousel .element .cover-container .play-overlay {
+
+.main-container .dashboard .main-page .section-container .carousel .element .cover-container img {
+    object-fit: cover;
+
+}
+
+.main-container .dashboard .main-page .section-container .carousel .element .play-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
     display: none;
-
 }
 
-.main-container .dashboard .main-page .section-container .carousel .element .cover-container .play-icon {
+.main-container .dashboard .main-page .section-container .carousel .element .cover-container .play-overlay .black-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+}
+
+.main-container .dashboard .main-page .section-container .carousel .element .cover-container .play-overlay .play-icon {
     position: absolute;
     width: 30%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: none;
 
+}
 
+.main-container .dashboard .main-page .section-container .carousel .element .cover-container:hover .play-overlay {
+    display: block;
 }
 
 .main-container .dashboard .main-page .section-container .carousel .element .element-title {
@@ -366,6 +413,13 @@ h2 {
 
 .main-container .dashboard .main-page .section-container .section-description {
     font-size: .75rem;
+    margin-top: 10px;
+}
+
+.main-container .dashboard .main-page .popular-artists .carousel .element .cover-container {
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 
@@ -407,6 +461,10 @@ footer .controls-container .left-controls .listening .actual-song-info .actual-s
     font-size: .625rem;
 }
 
+footer .controls-container .left-controls .listening .actual-song-info .actual-song-artist:hover {
+    text-decoration: underline;
+}
+
 footer .controls-container .left-controls .listening .song-interactions {
     gap: 14px;
     margin-left: 43px;
@@ -431,6 +489,10 @@ footer .controls-container .center-controls .top-controls li button .fa-circle-p
     padding: 0 8px;
 }
 
+footer .controls-container .center-controls .top-controls li button .fa-circle-play:hover {
+    scale: 1.1;
+}
+
 footer .controls-container .center-controls .bottom-scrollbar .total-bar {
     width: 428px;
     margin: 0 26px;
@@ -446,7 +508,6 @@ footer .controls-container .center-controls .bottom-scrollbar .song-duration {
 
 footer .controls-container .right-controls {
     gap: 17px;
-
 }
 
 footer .controls-container .right-controls li button i {
@@ -468,7 +529,7 @@ footer .controls-container .right-controls .total-bar {
 @media screen and (max-width: 992px) {
 
     .main-container .dashboard .main-page .section-container .carousel .element {
-        width: calc((100% - 45px) / 3);
+        width: calc((100% - 45px) / 4);
     }
 }
 
