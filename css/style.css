@@ -108,7 +108,6 @@ h2 {
     display: block;
 }
 
-
 .highlighter {
     background-color: var(--highlight);
     position: absolute;
@@ -310,6 +309,7 @@ h2 {
     position: fixed;
     right: 0;
     left: 230px;
+    z-index: 9999;
 
 }
 
@@ -332,7 +332,7 @@ h2 {
 /* #region main-page */
 
 .main-container .dashboard .main-page {
-    padding: 0 20px;
+    padding: 0 20px 20px 20px;
     height: calc(100vh - 90px);
     overflow-y: auto;
 }
@@ -377,11 +377,9 @@ h2 {
     width: calc((100% - 75px) / 6);
 }
 
-
-
-
 .main-container .dashboard .main-page .section-container .carousel .element .cover-container {
     position: relative;
+    max-width: 300px;
 }
 
 
@@ -465,75 +463,80 @@ footer .controls-container {
 
 }
 
-footer .controls-container .left-controls .listening .actual-song-cover {
+footer .controls-container .controls {
+    min-width: calc(100% / 3);
+}
+
+footer .controls-container .left.controls .listening .actual-song {
+    margin-right: 25px;
+}
+
+
+footer .controls-container .left.controls .listening .actual-song .actual-song-cover {
     width: 42px;
     margin-right: 12px;
 }
 
-footer .controls-container .left-controls .listening .actual-song-info .actual-song-title {
+footer .controls-container .left.controls .listening .actual-song .actual-song-info .actual-song-title {
     color: white;
     font-weight: bold;
     font-size: .75rem;
 }
 
-footer .controls-container .left-controls .listening .actual-song-info .actual-song-artist {
+footer .controls-container .left.controls .listening .actual-song .actual-song-info .actual-song-artist {
     font-size: .625rem;
 }
 
-footer .controls-container .left-controls .listening .actual-song-info .actual-song-artist:hover {
+footer .controls-container .left.controls .listening .actual-song .actual-song-info .actual-song-artist:hover {
     text-decoration: underline;
 }
 
-footer .controls-container .left-controls .listening .song-interactions {
+footer .controls-container .left.controls .listening .song-interactions {
     gap: 14px;
-    margin-left: 43px;
 }
 
-footer .controls-container .center-controls {
-    flex-shrink: 0;
-}
-
-footer .controls-container .center-controls .top-controls {
+footer .controls-container .center.controls .top-controls {
     margin-bottom: 15px;
     gap: 22px;
 }
 
-footer .controls-container .center-controls .top-controls li button i {
+footer .controls-container .center.controls .top-controls li button i {
     color: white;
     font-size: 1.125rem;
 }
 
-footer .controls-container .center-controls .top-controls li button .fa-circle-play {
+footer .controls-container .center.controls .top-controls li button .fa-circle-play {
     font-size: 1.875rem;
     padding: 0 8px;
 }
 
-footer .controls-container .center-controls .top-controls li button .fa-circle-play:hover {
+footer .controls-container .center.controls .top-controls li button .fa-circle-play:hover {
     scale: 1.1;
 }
 
-footer .controls-container .center-controls .bottom-scrollbar .total-bar {
+footer .controls-container .center.controls .bottom-scrollbar .total-bar {
     width: 428px;
     margin: 0 26px;
 
 }
 
-footer .controls-container .center-controls .bottom-scrollbar .actual-time,
-footer .controls-container .center-controls .bottom-scrollbar .song-duration {
+footer .controls-container .center.controls .bottom-scrollbar .actual-time,
+footer .controls-container .center.controls .bottom-scrollbar .song-duration {
     font-weight: bold;
     color: white;
     font-size: .625rem;
 }
 
-footer .controls-container .right-controls {
+footer .controls-container .right.controls {
+    justify-content: flex-end;
     gap: 17px;
 }
 
-footer .controls-container .right-controls li button i {
+footer .controls-container .right.controls li button i {
     color: white;
 }
 
-footer .controls-container .right-controls .total-bar {
+footer .controls-container .right.controls .total-bar {
     width: 118px;
     margin-left: 4px;
 }
@@ -561,6 +564,12 @@ footer .controls-container .right-controls .total-bar {
     .main-container .dashboard .main-page .section-container .carousel .element {
         width: calc((100% - 15px) / 2);
     }
+
+    footer .controls-container .left.controls .listening .song-interactions {
+        flex-direction: column;
+        gap: 0;
+    }
+
 }
 
 /* #endregion da 0px a 768px */
