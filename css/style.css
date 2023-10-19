@@ -144,6 +144,14 @@ h2 {
     gap: 9px;
 }
 
+.main-container .navbar .nav-menu .element-list li:hover a {
+    color: white;
+}
+
+.main-container .navbar .nav-menu .element-list li:hover img {
+    opacity: 1;
+}
+
 .main-container .navbar .nav-menu .element-list li .element-evidence {
     color: white;
 }
