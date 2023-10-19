@@ -102,15 +102,15 @@ body {
 
 /* #region logo-container*/
 
-.main.container .navbar .top-menu .logo-container {
+.main.container .navbar .logo-container {
     width: 132px;
 }
 
-.main.container .navbar .top-menu .logo-container img {
+.main.container .navbar .logo-container img {
     width: 100%
 }
 
-.main.container .navbar .top-menu .logo-container .small-logo {
+.main.container .navbar .logo-container .small-logo {
     display: none;
 }
 
@@ -119,20 +119,20 @@ body {
 
 /* #region nav-menu */
 
-.main.container .navbar .top-menu .nav-menu .element-list {
+.main.container .navbar .nav-menu .element-list {
     margin-top: 29px;
     gap: 9px;
 }
 
-.main.container .navbar .top-menu .nav-menu .element-list li .element-evidence {
+.main.container .navbar .nav-menu .element-list li .element-evidence {
     color: white;
 }
 
-.main.container .navbar .top-menu .nav-menu .element-list li:first-of-type {
+.main.container .navbar .nav-menu .element-list li:first-of-type {
     position: relative;
 }
 
-.main.container .navbar .top-menu .nav-menu .element-list li:first-of-type .highlighter {
+.main.container .navbar .nav-menu .element-list li:first-of-type .highlighter {
     width: 3px;
     height: 35px;
     background-color: var(--highlight);
@@ -140,7 +140,7 @@ body {
     left: -20px;
 }
 
-.main.container .navbar .top-menu .nav-menu .element-list img {
+.main.container .navbar .nav-menu .element-list img {
     width: 26px;
     margin-right: 6px;
     opacity: 0.7;
@@ -150,24 +150,27 @@ body {
 
 /* #region playlist-menu */
 
-.main.container .navbar .top-menu .playlist-menu {
+.main.container .navbar .playlist-menu {
     margin-top: 22px;
+    overflow-y: hidden;
+    flex-grow: 1;
+    min-height: 175px;
 }
 
-.main.container .navbar .top-menu .playlist-menu .element-evidence {
+.main.container .navbar .playlist-menu .element-evidence {
     color: white;
     font-size: .8125rem;
 }
 
-.main.container .navbar .top-menu .playlist-menu .add-playlist {
+.main.container .navbar .playlist-menu .add-playlist {
     margin-top: 8px;
 }
 
-.main.container .navbar .top-menu .playlist-menu .add-playlist a {
+.main.container .navbar .playlist-menu .add-playlist a {
     font-size: .875rem;
 }
 
-.main.container .navbar .top-menu .playlist-menu .add-playlist i {
+.main.container .navbar .playlist-menu .add-playlist i {
     color: white;
     font-size: 2.625rem;
     vertical-align: middle;
@@ -175,15 +178,14 @@ body {
     opacity: 0.7;
 }
 
-.main.container .navbar .top-menu .playlist-menu .playlist-list {
+.main.container .navbar .playlist-menu .playlist-list {
     gap: 16px;
     margin-top: 15px;
     overflow-y: auto;
-    height: calc(100vh - 460px);
-    min-height: 100px;
+
 }
 
-.main.container .navbar .top-menu .playlist-menu .playlist-list li span {
+.main.container .navbar .playlist-menu .playlist-list li span {
     font-size: .8125rem;
 }
 
@@ -191,29 +193,33 @@ body {
 
 /* #region profile-menu */
 
-.main.container .navbar .bottom-menu .profile-menu .download-app {
+.main.container .navbar .profile-menu {
+    margin-top: auto;
+}
+
+.main.container .navbar .profile-menu .download-app {
     margin-top: 9px;
 }
 
-.main.container .navbar .bottom-menu .profile-menu .download-app img {
+.main.container .navbar .profile-menu .download-app img {
     opacity: 0.7;
     width: 13px;
     margin-right: 11px;
 
 }
 
-.main.container .navbar .bottom-menu .profile-menu hr {
+.main.container .navbar .profile-menu hr {
     border-color: var(--text-gray);
     margin-top: 9px;
     margin-bottom: 13px;
 }
 
-.main.container .navbar .bottom-menu .profile-menu .user .username {
+.main.container .navbar .profile-menu .user .username {
     font-size: .8125rem;
     color: white;
 }
 
-.main.container .navbar .bottom-menu .profile-menu .user .pic-container {
+.main.container .navbar .profile-menu .user .pic-container {
     margin-right: 10px;
     background-color: var(--text-gray);
     border-radius: 50%;
@@ -222,7 +228,7 @@ body {
     overflow: hidden;
 }
 
-.main.container .navbar .bottom-menu .profile-menu .user .pic-container img {
+.main.container .navbar .profile-menu .user .pic-container img {
     object-fit: cover;
 }
 
@@ -362,38 +368,38 @@ footer .controls-container .right-controls .total-bar {
         padding: 0;
     }
 
-    .main.container .navbar .top-menu,
-    .main.container .navbar .bottom-menu .profile-menu {
+    .main.container .navbar,
+    .main.container .navbar .profile-menu {
         align-items: center;
     }
 
     .main.container .navbar a,
     .main.container .navbar span,
-    .main.container .navbar .top-menu .playlist-menu,
-    .main.container .navbar .top-menu .big-logo,
-    .main.container .navbar .bottom-menu hr {
+    .main.container .navbar .playlist-menu,
+    .main.container .navbar .big-logo,
+    .main.container .navbar hr {
         display: none;
     }
 
-    .main.container .navbar .top-menu .logo-container .small-logo {
+    .main.container .navbar .logo-container .small-logo {
         display: block;
     }
 
-    .main.container .navbar .top-menu .logo-container {
+    .main.container .navbar .logo-container {
         width: 28px;
         margin-top: 5px;
     }
 
-    .main.container .navbar .top-menu .nav-menu .element-list li img,
-    .main.container .navbar .bottom-menu .profile-menu .download-app img {
+    .main.container .navbar .nav-menu .element-list li img,
+    .main.container .navbar .profile-menu .download-app img {
         margin: 0;
     }
 
-    .main.container .navbar .bottom-menu .profile-menu .user .pic-container {
+    .main.container .navbar .profile-menu .user .pic-container {
         margin: 22px 0 10px;
     }
 
-    .main.container .navbar .top-menu .nav-menu .element-list {
+    .main.container .navbar .nav-menu .element-list {
         margin-top: 15px;
     }
 
