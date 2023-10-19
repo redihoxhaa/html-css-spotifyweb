@@ -88,10 +88,24 @@ h2 {
     height: 100%;
     background-color: var(--songbar);
     border-radius: 10px;
+    position: relative;
 }
 
 .total-bar:hover .actual-bar {
     background-color: var(--highlight);
+}
+
+.ball-scroller {
+    position: absolute;
+    right: -0.4688rem;
+    bottom: -0.4688rem;
+    color: white;
+    font-size: 14px;
+    display: none;
+}
+
+.total-bar:hover .ball-scroller {
+    display: block;
 }
 
 
@@ -99,8 +113,6 @@ h2 {
     background-color: var(--highlight);
     position: absolute;
 }
-
-
 
 /* #endregion COMMON */
 
@@ -437,7 +449,6 @@ h2 {
 
 
 /* #endregion dashboard */
-
 
 /* #endregion MAIN */
 
