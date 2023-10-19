@@ -511,9 +511,13 @@
 
     <!-- Footer -->
     <footer>
+        <!-- Container controlli footer -->
         <div class="controls-container flex space-between align-center">
+            <!-- Controlli a sinistra -->
             <div class="left controls">
+                <!-- Container della riproduzione in corso -->
                 <div class="listening flex">
+                    <!-- Container info canzone in riproduzione -->
                     <div class="actual-song flex">
                         <div class="actual-song-cover">
                             <img src="img/sinister.jpeg" alt="Sinister cover">
@@ -523,15 +527,24 @@
                             <a href="#" class="actual-song-artist">Brano Nome</a>
                         </div>
                     </div>
+                    <!-- /Container info canzone in riproduzione -->
 
+                    <!-- Controlli per la gestione delle preferenze -->
                     <div class="song-interactions flex align-center">
                         <a href="#"><i class="fa-regular fa-heart"></i></a>
                         <a href="#"><i class="fa-regular fa-folder"></i></a>
                     </div>
-                </div>
-            </div>
+                    <!-- /Controlli per la gestione delle preferenze -->
 
+                </div>
+                <!-- /Container della riproduzione in corso -->
+            </div>
+            <!-- Controlli a sinistra -->
+
+
+            <!-- Controlli centrali -->
             <div class="center controls">
+                <!-- Barra superiore con controlli riproduzione -->
                 <ul class="top-controls flex align-center justify-center">
                     <li><button><i class="fa-solid fa-shuffle"></i></button></li>
                     <li><button><i class="fa-solid fa-backward-step"></i></button></li>
@@ -539,8 +552,16 @@
                     <li><button><i class="fa-solid fa-forward-step"></i></button></li>
                     <li><button><i class="fa-solid fa-rotate-right"></i></button></li>
                 </ul>
+                <!-- /Barra superiore con controlli riproduzione -->
+
+                <!-- Barra inferiore con scrollbar riproduzione -->
                 <div class="bottom-scrollbar flex align-center justify-center">
+
+                    <!-- Minutaggio attuale -->
                     <span class="actual-time">0:25</span>
+                    <!-- Minutaggio attuale -->
+
+                    <!-- Scrollbar riproduzione -->
                     <div class="total-bar">
                         <div class="actual-bar">
                             <div class="ball-scroller">
@@ -548,26 +569,43 @@
                             </div>
                         </div>
                     </div>
-                    <span class="song-duration">4:35</span>
-                </div>
-            </div>
+                    <!-- /Scrollbar riproduzione -->
 
+
+                    <!-- Minutaggio totale canzone -->
+                    <span class="song-duration">4:35</span>
+                    <!-- /Minutaggio totale canzone -->
+
+                </div>
+                <!-- /Barra inferiore con scrollbar riproduzione -->
+
+            </div>
+            <!-- /Controlli centrali -->
+
+            <!-- Controlli a destra -->
             <ul class="right controls flex align-center">
+
+                <!-- Controlli su preferenze di riproduzione -->
                 <li><button><i class="fa-solid fa-list-ul"></i></button></li>
                 <li><button><i class="fa-solid fa-desktop"></i></button></li>
+                <!-- /Controlli su preferenze di riproduzione -->
+
+                <!-- Gestione volume -->
                 <li><button><i class="fa-solid fa-volume-high"></i></button></li>
-                <li>
-                    <div class="total-bar">
-                        <div class="actual-bar">
-                            <div class="ball-scroller">
-                                <i class="fa-solid fa-circle"></i>
-                            </div>
+                <li class="total-bar">
+                    <div class="actual-bar">
+                        <div class="ball-scroller">
+                            <i class="fa-solid fa-circle"></i>
                         </div>
                     </div>
                 </li>
-            </ul>
+                <!-- /Gestione volume -->
 
+            </ul>
+            <!-- /Controlli a destra -->
         </div>
+        <!-- Container controlli footer -->
+
     </footer>
     <!-- /Footer -->
 
