@@ -250,7 +250,6 @@ h2 {
     gap: 16px;
     margin-top: 15px;
     overflow-y: auto;
-
 }
 
 .main-container .navbar .playlist-menu .playlist-list::-webkit-scrollbar {
@@ -335,7 +334,6 @@ h2 {
     right: 0;
     left: 230px;
     z-index: 9999;
-
 }
 
 .main-container .dashboard .upgrade-overlay button {
@@ -371,7 +369,6 @@ h2 {
     gap: 22px;
     flex-wrap: wrap;
     text-transform: uppercase;
-
 }
 
 .main-container .dashboard .main-page .categories li:first-of-type {
@@ -383,7 +380,6 @@ h2 {
     width: 30px;
     bottom: -5px;
     left: calc(50% - 15px);
-
 }
 
 /* #endregion categories */
@@ -412,7 +408,6 @@ h2 {
 
 .main-container .dashboard .main-page .section-container .carousel .element .cover-container img {
     object-fit: cover;
-
 }
 
 .main-container .dashboard .main-page .section-container .carousel .element .play-overlay {
@@ -436,7 +431,6 @@ h2 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
 }
 
 .main-container .dashboard .main-page .section-container .carousel .element .cover-container:hover .play-overlay {
@@ -453,7 +447,6 @@ h2 {
     font-size: .75rem;
     margin-top: 10px;
     text-align: center;
-
 }
 
 .main-container .dashboard .main-page .section-container .section-description {
@@ -492,13 +485,11 @@ footer .controls-container .right.controls {
     flex-grow: 1;
     min-width: 150px;
     max-width: 230px;
-
 }
 
 footer .controls-container .center.controls {
     width: 37%;
     margin: 0 10px;
-
 }
 
 /* #region left controls */
@@ -609,7 +600,6 @@ footer .controls-container .right.controls .total-bar {
 
     /* #endregion dashboard responsive*/
 
-
 }
 
 /* #endregion da 0 a 992px */
@@ -635,7 +625,6 @@ footer .controls-container .right.controls .total-bar {
     footer .controls-container .left.controls .listening .song-interactions {
         flex-direction: column;
         gap: 0;
-
     }
 
     /* #endregion footer responsive*/
@@ -646,7 +635,6 @@ footer .controls-container .right.controls .total-bar {
 /* #region da 0px a 576px */
 
 @media screen and (max-width: 576px) {
-
 
     /* #region navbar responsive*/
 
@@ -690,7 +678,6 @@ footer .controls-container .right.controls .total-bar {
         margin-top: 15px;
     }
 
-
     /* #endregion navbar responsive*/
 
     /* #region dashboard responsive*/
@@ -702,7 +689,6 @@ footer .controls-container .right.controls .total-bar {
     /* #endregion dashboard responsive*/
 
 }
-
 
 /* #endregion da 0px a 576px */
 
