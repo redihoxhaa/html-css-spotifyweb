@@ -7,7 +7,6 @@ function play() {
         play.classList.remove('fa-circle-play');
     } else {
         audio.pause();
-        audio.currentTime = 0
         play.classList.add('fa-circle-play');
         play.classList.remove('fa-circle-pause');
     }
