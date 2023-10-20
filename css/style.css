@@ -121,6 +121,7 @@ h2 {
     bottom: -0.4688rem;
     color: white;
     font-size: 14px;
+    cursor: pointer;
     display: none;
 }
 
@@ -345,6 +346,7 @@ h2 {
     padding: 13px 40px;
     margin-left: auto;
     font-size: .75rem;
+    text-transform: uppercase;
 }
 
 .main-container .dashboard .upgrade-overlay button:hover {
@@ -368,6 +370,7 @@ h2 {
     font-size: .8125rem;
     gap: 22px;
     flex-wrap: wrap;
+    text-transform: uppercase;
 
 }
 

@@ -6,6 +6,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Inclusione js -->
+    <script src="function.js"></script>
+    <!-- /Inclusione js -->
+
+
     <!-- Import Fonts -->
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -137,7 +142,7 @@
 
                 <!-- Overlay upgrade -->
                 <div class="upgrade-overlay flex align-center">
-                    <button>EFFETTUA L'UPGRADE</button>
+                    <button>Effettua l'upgrade</button>
 
                 </div>
                 <!-- /Overlay upgrade -->
@@ -147,14 +152,14 @@
                     <!-- Categorie di ascolto -->
                     <ul class="categories flex justify-center">
                         <li class=>
-                            <a href="#">IN EVIDENZA</a>
+                            <a href="#">In evidenza</a>
                             <div class="highlighter"></div>
                         </li>
-                        <li><a href="#">PODCAST</a></li>
-                        <li><a href="#">CLASSIFICHE</a></li>
-                        <li><a href="#">GENERI E MOOD</a></li>
-                        <li><a href="#">NUOVE USCITE</a></li>
-                        <li><a href="#">SCOPRI</a></li>
+                        <li><a href="#">Podcast</a></li>
+                        <li><a href="#">Classifiche</a></li>
+                        <li><a href="#">Generi e mood</a></li>
+                        <li><a href="#">Nuove uscite</a></li>
+                        <li><a href="#">Scopri</a></li>
                     </ul>
                     <!-- /Categorie di ascolto -->
 
@@ -548,7 +553,8 @@
                 <ul class="top-controls flex align-center justify-center">
                     <li><button><i class="fa-solid fa-shuffle"></i></button></li>
                     <li><button><i class="fa-solid fa-backward-step"></i></button></li>
-                    <li><button><i class="fa-regular fa-circle-play"></i></button></li>
+                    <li><button><i id="play" onclick="play()" class="fa-regular fa-circle-play"></i></button></li>
+                    <audio src="never.MP3" id="audio"></audio>
                     <li><button><i class="fa-solid fa-forward-step"></i></button></li>
                     <li><button><i class="fa-solid fa-rotate-right"></i></button></li>
                 </ul>
