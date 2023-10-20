@@ -482,9 +482,7 @@ footer .controls-container {
 
 footer .controls-container .left.controls,
 footer .controls-container .right.controls {
-    flex-grow: 1;
-    min-width: 150px;
-    max-width: 230px;
+    width: 230px;
 }
 
 footer .controls-container .center.controls {
