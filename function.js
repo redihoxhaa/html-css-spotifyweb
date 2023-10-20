@@ -1,13 +1,14 @@
 function play() {
-    var audio = document.getElementById('audio');
+    const audio = document.getElementById('canzone');
+    const play = document.querySelector('#play');
     if (audio.paused) {
         audio.play();
-        $('#play').removeClass('fa-circle-play')
-        $('#play').addClass('fa-circle-pause')
+        play.classList.add('fa-circle-pause');
+        play.classList.remove('fa-circle-play');
     } else {
         audio.pause();
         audio.currentTime = 0
-        $('#play').addClass('fa-circle-play')
-        $('#play').removeClass('fa-circle-pause')
+        play.classList.add('fa-circle-play');
+        play.classList.remove('fa-circle-pause');
     }
 }
