@@ -545,12 +545,12 @@ footer .controls-container .center.controls .top-controls li button i {
     font-size: 1.125rem;
 }
 
-footer .controls-container .center.controls .top-controls li button .fa-circle-play {
+footer .controls-container .center.controls .top-controls li button #play {
     font-size: 1.875rem;
     padding: 0 8px;
 }
 
-footer .controls-container .center.controls .top-controls li button .fa-circle-play:hover {
+footer .controls-container .center.controls .top-controls li button #play:hover {
     scale: 1.1;
 }
 
