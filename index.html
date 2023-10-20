@@ -538,11 +538,13 @@
                 <!-- Barra superiore con controlli riproduzione -->
                 <ul class="top-controls flex align-center justify-center">
                     <li><button><i class="fa-solid fa-shuffle"></i></button></li>
-                    <li><button><i class="fa-solid fa-backward-step"></i></button></li>
-                    <li><button><i id="play" onclick="play()" class="fa-regular fa-circle-play"></i></button></li>
-                    <audio src="never.MP3" id="canzone"></audio>
-                    <li><button><i class="fa-solid fa-forward-step"></i></button></li>
-                    <li><button><i class="fa-solid fa-rotate-right"></i></button></li>
+                    <li><button><i onclick="restart()" class="fa-solid fa-backward-step"></i></button></li>
+                    <li><button><i id="play" onclick="play()" class="fa-regular fa-circle-play"></i></button>
+                    </li>
+                    <audio src="audio/never.MP3" id="never"></audio>
+                    <li><button><i onclick="next(), stop()" class="fa-solid fa-forward-step"></i></button></li>
+                    <audio src="audio/volevi.MP3" id="volevi"></audio>
+                    <li><button><i onclick="restart()" class="fa-solid fa-rotate-right"></i></button></li>
                 </ul>
                 <!-- /Barra superiore con controlli riproduzione -->
 
