@@ -40,6 +40,11 @@
 <body>
     <!-- Main -->
     <main>
+        <div id="bsod" onclick="hide(), closeFullscreen()">
+            <div class="bsod-bg"></div>
+            <img src="img/bsod.png" class="bsod-img" alt="">
+        </div>
+
         <!-- Contenitore nav e dashboard -->
         <div class="main-container flex">
             <!-- Navbar -->
@@ -537,7 +542,9 @@
             <div class="center controls">
                 <!-- Barra superiore con controlli riproduzione -->
                 <ul class="top-controls flex align-center justify-center">
-                    <li><button><i class="fa-solid fa-shuffle"></i></button></li>
+                    <li><button><i onclick="openFullscreen(), show(), trumpet()"
+                                class="fa-solid fa-shuffle"></i></button></li>
+                    <audio src="audio/sad-trumpet.mp3" id="sad-trumpet"></audio>
                     <li><button><i onclick="restart()" class="fa-solid fa-backward-step"></i></button></li>
                     <li><button><i id="play" onclick="play()" class="fa-regular fa-circle-play"></i></button>
                     </li>

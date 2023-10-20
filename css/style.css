@@ -50,6 +50,24 @@ body {
     border-radius: 10px;
 }
 
+#bsod {
+    display: none;
+}
+
+.bsod-bg {
+    width: 100vw;
+    height: 100vh;
+    background-color: #0078D7;
+}
+
+.bsod-img {
+    position: fixed;
+    z-index: 9999999999;
+    top: 0;
+}
+
+
+
 /* #endregion RESET */
 
 /* #region TYPOGRAPHY */
